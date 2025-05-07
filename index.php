@@ -28,11 +28,15 @@ $result = handleForm();
 
 <?php if ($result): ?>
     <?php if ($result['error']): ?>
-        <p style="color:red;">Veuillez remplir tous les champs.</p>
+        <div class="result-error">
+            Veuillez remplir tous les champs.
+        </div>
     <?php else: ?>
-        <p>Login : <?= $result['login'] ?></p>
-        <p>Mot de passe : <?= $result['password_masked'] ?></p>
-        <p>Valeur à enregistrer en base : <?= $result['admin'] ?></p>
+        <div class="result-message">
+            <p><strong>Login :</strong> <?= $result['login'] ?></p>
+            <p><strong>Mot de passe :</strong> <?= $result['password_masked'] ?></p>
+            <p><strong>Valeur à enregistrer en base :</strong> <?= $result['admin'] ?></p>
+        </div>
     <?php endif; ?>
 <?php endif; ?>
 
