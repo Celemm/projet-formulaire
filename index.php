@@ -13,6 +13,10 @@ $result = handleForm();
 <body>
 
 <form method="post" action="<?= $_SERVER["PHP_SELF"] ?>">
+<div class="info-message">
+    <p>Remplissez les champs suivants ✍️</p>
+</div>
+
     <label for="login">Login :</label>
     <input type="text" name="login" id="login" required>
 
@@ -20,7 +24,7 @@ $result = handleForm();
     <input type="password" name="password" id="password" required>
 
     <label>
-        <input type="checkbox" name="admin" value="1"> Vous êtes admin
+        <input type="checkbox" name="admin" value="1"> Vous êtes admin 👑
     </label>
 
     <button type="submit">Envoyer</button>

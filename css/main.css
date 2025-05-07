@@ -71,6 +71,13 @@ input[type="checkbox"] {
 .result-message p {
     margin-bottom: 8px;
 }
+.info-message {
+    text-align: center; /* Centre le texte */
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
 
 .result-error {
     margin-top: 20px;
